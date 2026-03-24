@@ -1,0 +1,211 @@
+/* =========================================================================
+   BeautyClaw AI Station - Contact Page Styles
+   ========================================================================= */
+
+body.contact-page {
+    background-color: #0b0b0e; /* slightly different dark shade to feel steady/business */
+}
+
+/* Typography Global Override */
+.center-desc {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Light Tech Hero Background */
+.light-tech-bg {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; height: 600px;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+.light-tech-bg::after {
+    content: '';
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 100% 40px;
+    mask-image: radial-gradient(ellipse at center, black 0%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 0%, transparent 80%);
+}
+
+/* Giant Business Card for QR Module */
+.giant-business-card {
+    display: flex;
+    background: rgba(18,18,22, 0.95);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 24px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.1);
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+    .giant-business-card { flex-direction: column; }
+}
+
+.giant-business-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+}
+
+.side-padding {
+    padding: 5rem 4rem;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .side-padding { padding: 3rem 2rem; }
+}
+
+.gbc-info {
+    border-right: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .gbc-info { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.05); }
+}
+
+.gbc-badge {
+    align-self: flex-start;
+    padding: 6px 14px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    margin-bottom: 1.5rem;
+}
+
+.gbc-title {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.gbc-subtitle {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.gbc-desc {
+    color: #a0a0a0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    max-width: 450px;
+}
+
+.gbc-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Right Side: QR Display */
+.gbc-qr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-terminal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Clean QR container — no decorative overlays, filters, or scan effects */
+.qr-core-display {
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* No ::before pseudo-element, no corners, no scan-line overlays */
+.qr-core-display::before { display: none; }
+.qr-corners { display: none; }
+.qr-scan-line { display: none; }
+
+/* QR image: must display completely, never cropped */
+.qr-core-display img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 6px;
+    /* No filters, no opacity, no blur */
+}
+
+/* Mobile: QR still clear and scannable */
+@media (max-width: 768px) {
+    .qr-core-display {
+        width: 200px;
+        height: 200px;
+        padding: 14px;
+    }
+}
+
+.qr-text-placeholder {
+    color: #999;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.qr-side-text {
+    text-align: center;
+}
+
+.qst-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.qst-subtitle {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.qst-list {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.sst-dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #03dac6;
+    margin-right: 4px;
+    vertical-align: middle;
+}

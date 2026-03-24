@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品能力 | BeautyClaw AI Station</title>
+    <meta name="description" content="三大 AI 助手组成医美机构的智能工作系统。内容、数据、经营，一套系统统一完成。由 OpenClaw Agent 统一调度。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/industry.css">
+    <link rel="stylesheet" href="css/capabilities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="capabilities-page">
+    <div class="noise-overlay"></div>
+    
+        <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="brand">
+                <span class="brand-name">BeautyClaw</span>
+                <span class="brand-line">|</span>
+                <span class="brand-suffix">AI Station</span>
+            </div>
+            <div class="nav-links desktop-only" style="margin-right: auto; margin-left: 2rem;">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="openclaw.html" class="nav-link">OpenClaw</a>
+                <a href="industry.html" class="nav-link">解决方案</a>
+                <a href="capabilities.html" class="nav-link active">产品能力</a>
+                <a href="skillstore.html" class="nav-link">Skill Store</a>
+                <a href="contact.html" class="nav-link">联系我们</a>
+            </div>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-nav-glass btn-sm">扫码咨询</a>
+                <button class="menu-toggle mobile-only" aria-label="Menu" style="background:none; border:none; color:#fff; font-size:1.5rem; cursor:pointer;" onclick="document.getElementById('mobileNav').classList.toggle('active')">☰</button>
+            </div>
+        </div>
+        <!-- Mobile nav links -->
+        <div id="mobileNav" class="mobile-nav-menu" style="display: none; flex-direction: column; background: rgba(10,10,15,0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="openclaw.html" class="nav-link">OpenClaw</a>
+            <a href="industry.html" class="nav-link">行业解决方案</a>
+            <a href="capabilities.html" class="nav-link active">产品能力</a>
+            <a href="skillstore.html" class="nav-link">Skill Store</a>
+            <a href="contact.html" class="nav-link">联系我们</a>
+        </div>
+    </nav>
+
+    <main class="smooth-wrapper">
+        <!-- 1. 首屏 Hero Section -->
+        <section class="hero slide-up-el cap-hero">
+            <div class="hero-bg-system">
+                <div class="bg-glow center-glow"></div>
+                <div class="bg-glow purple-glow" style="opacity: 0.15"></div>
+                <div class="bg-glow accent-glow"></div>
+                <!-- Structured network background for capabilities -->
+                <div class="network-grid-bg"></div>
+            </div>
+            <div class="container hero-container" style="min-height: 80vh; align-items: center; justify-content: center; text-align: center;">
+                <div class="hero-top" style="margin-bottom: 2rem;">
+                    <div class="hero-badge" style="background: rgba(187, 134, 252, 0.1); border: 1px solid rgba(187, 134, 252, 0.3); color: #bb86fc;">Product Capabilities</div>
+                </div>
+                <h1 class="hero-title" style="font-size: 3.8rem; line-height: 1.2; margin-bottom: 1.5rem;">
+                    三大 AI 助手，<br>组成医美机构的<span class="text-highlight">智能工作系统</span>
+                </h1>
+                <h2 class="hero-subtitle" style="font-weight: 400; font-size: 1.6rem; color: #fff; margin-bottom: 1.5rem;">
+                    内容、数据、经营，一套系统统一完成
+                </h2>
+                <p class="hero-desc center-desc" style="font-size: 1.125rem; color: #a0a0a0; line-height: 1.7; max-width: 650px; margin-bottom: 3rem;">
+                    BeautyClaw 不是把多个功能堆在一起。<br>
+                    它通过 OpenClaw Agent 统一调度能力，<br>
+                    让各个环节形成协同，而不是彼此割裂。
+                </p>
+                
+                <!-- Hero Abstract Visual (Orchestration Node) -->
+                <div class="hero-orchestration-visual">
+                    <div class="orch-center">Agent Core</div>
+                    <div class="orch-orbit">
+                        <div class="orch-node orch-content">Content</div>
+                        <div class="orch-node orch-data">Data</div>
+                        <div class="orch-node orch-ops">Ops</div>
+                        <svg class="orch-lines" viewBox="0 0 400 400">
+                            <circle cx="200" cy="200" r="140" fill="none" stroke="rgba(255,255,255,0.1)" stroke-dasharray="4 4"/>
+                            <circle cx="200" cy="200" r="140" fill="none" stroke="#bb86fc" stroke-dasharray="100 800" class="orbit-runner"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 三大 AI 助手概览区 Overview Section -->
+        <section class="section slide-up-el pt-large">
+            <div class="container center mb-large">
+                <h4 class="section-subtitle-mono" style="letter-spacing: 2px;">CORE ASSISTANTS</h4>
+                <h2 class="section-title" style="font-size: 2.5rem;">三大核心能力，覆盖机构最关键的工作流程</h2>
+                <h4 class="subsection-title" style="color: #fff; margin-bottom: 1rem;">从日常执行，到经营支持</h4>
+            </div>
+            
+            <div class="container pb-large">
+                <div class="assistants-grid">
+                    <div class="assistant-overview-card">
+                        <div class="aoc-icon ai-content"></div>
+                        <h3 class="aoc-title">AI 内容助手</h3>
+                        <p class="aoc-desc">负责推广内容生成，从抖音脚本到小红书矩阵，实现高频高质产出。</p>
+                    </div>
+                    <div class="assistant-overview-card">
+                        <div class="aoc-icon ai-data"></div>
+                        <h3 class="aoc-title">AI 数据助手</h3>
+                        <p class="aoc-desc">负责信息整理与结构化分析，将海量咨询对话转化为清晰标签。</p>
+                    </div>
+                    <div class="assistant-overview-card">
+                        <div class="aoc-icon ai-ops"></div>
+                        <h3 class="aoc-title">AI 经营助手</h3>
+                        <p class="aoc-desc">负责总结趋势并输出优化建议，为管理层提供实时敏捷的决策支持。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. AI 内容助手区 Content Assistant Section -->
+        <section class="section assistant-detail-section slide-up-el">
+            <div class="container layout-massive-split">
+                <div class="massive-text">
+                    <div class="ad-badge ai-content-badge">01</div>
+                    <h2 class="massive-title">AI 内容助手</h2>
+                    <h4 class="subsection-title" style="color: #bb86fc;">让机构每天稳定生成高质量内容</h4>
+                    <p class="section-desc mt-large" style="max-width: 450px;">
+                        自动生成抖音脚本、小红书文案、标题、分镜与拍摄建议。
+                        结合项目、机构定位、目标人群与医生特点，
+                        让内容更接近真实营销场景。
+                    </p>
+                </div>
+                <div class="hero-visual-right visual-box">
+                    <!-- Input -> Agent -> Output Graphic -->
+                    <div class="ipo-graphic">
+                        <div class="ipo-input-group">
+                            <div class="ip-item">项目信息</div>
+                            <div class="ip-item">人群定位</div>
+                            <div class="ip-item">医生特点</div>
+                        </div>
+                        <div class="ipo-flow-arrow">
+                            <div class="flow-line"></div>
+                            <div class="flow-dot"></div>
+                        </div>
+                        <div class="ipo-agent-core">
+                            <div class="agent-pulse"></div>
+                            <span>Agent</span>
+                        </div>
+                        <div class="ipo-flow-arrow right">
+                            <div class="flow-line"></div>
+                            <div class="flow-dot"></div>
+                        </div>
+                        <div class="ipo-output-group">
+                            <div class="op-doc">
+                                <div class="op-line title"></div>
+                                <div class="op-line"></div><div class="op-line"></div>
+                                <div class="op-line short"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ipo-label-bottom">内容生产管线 (Content Pipeline)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. AI 数据助手区 Data Assistant Section -->
+        <section class="section assistant-detail-section alt-bg slide-up-el">
+            <div class="container layout-massive-split reverse-layout">
+                <div class="hero-visual-right visual-box">
+                    <!-- Data Input -> Agent -> Structured Output Graphic -->
+                    <div class="ipo-graphic data-graphic">
+                        <div class="ipo-input-messy">
+                            <!-- abstract chat bubbles / scattered data -->
+                            <div class="messy-dot id-1"></div><div class="messy-dot id-2"></div>
+                            <div class="messy-box ib-1"></div><div class="messy-box ib-2"></div>
+                        </div>
+                        <div class="ipo-flow-arrow">
+                            <div class="flow-line"></div><div class="flow-dot"></div>
+                        </div>
+                        <div class="ipo-agent-core data-core">
+                            <div class="agent-pulse d-pulse"></div>
+                            <span>Agent</span>
+                        </div>
+                        <div class="ipo-flow-arrow right">
+                            <div class="flow-line"></div><div class="flow-dot"></div>
+                        </div>
+                        <div class="ipo-output-structured">
+                            <div class="struct-row"><div class="sr-key"></div><div class="sr-val"></div></div>
+                            <div class="struct-row"><div class="sr-key"></div><div class="sr-val"></div></div>
+                            <div class="struct-row"><div class="sr-key"></div><div class="sr-val"></div></div>
+                        </div>
+                    </div>
+                    <div class="ipo-label-bottom">数据结构化管线 (Data Pipeline)</div>
+                </div>
+                <div class="massive-text pl-large">
+                    <div class="ad-badge ai-data-badge">02</div>
+                    <h2 class="massive-title">AI 数据助手</h2>
+                    <h4 class="subsection-title" style="color: #03dac6;">把混乱数据，变成清晰结论</h4>
+                    <p class="section-desc mt-large" style="max-width: 450px;">
+                        自动整理顾客、咨询、项目、成交与复购数据。
+                        减少人工汇总成本，让管理者更快看清经营情况。
+                        从原始数据，到可行动的信息，中间交给 AI 完成。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. AI 经营助手区 Ops Assistant Section -->
+        <section class="section assistant-detail-section slide-up-el">
+            <div class="container layout-massive-split">
+                <div class="massive-text">
+                    <div class="ad-badge ai-ops-badge">03</div>
+                    <h2 class="massive-title">AI 经营助手</h2>
+                    <h4 class="subsection-title" style="color: #ffb300;">从看数据，升级到拿建议</h4>
+                    <p class="section-desc mt-large" style="max-width: 450px;">
+                        基于机构数据与业务结果，
+                        输出项目推广、内容表现与经营优化建议。
+                        帮助机构更快发现重点，也更快调整方向。
+                    </p>
+                </div>
+                <div class="hero-visual-right visual-box">
+                    <!-- Ops Feedback Loop Graphic -->
+                    <div class="ipo-graphic ops-graphic">
+                        <div class="ops-trend">
+                            <svg viewBox="0 0 100 50" class="trend-line">
+                                <path d="M0 40 Q 25 30, 50 40 T 100 10" fill="none" class="chart-path"></path>
+                            </svg>
+                        </div>
+                        <div class="ipo-flow-arrow">
+                            <div class="flow-line"></div><div class="flow-dot"></div>
+                        </div>
+                        <div class="ipo-agent-core ops-core">
+                            <div class="agent-pulse o-pulse"></div>
+                            <span>Agent</span>
+                        </div>
+                        <div class="ipo-flow-arrow right">
+                            <div class="flow-line"></div><div class="flow-dot"></div>
+                        </div>
+                        <div class="ops-decisions">
+                            <div class="d-branch up"><span class="d-icon">↗</span> 增加推广</div>
+                            <div class="d-branch right"><span class="d-icon">→</span> 优化话术</div>
+                        </div>
+                    </div>
+                    <div class="ipo-label-bottom">决策建议管线 (Operations Pipeline)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Agent 调度机制区 Orchestration Section (Core Focus) -->
+        <section class="section slide-up-el block-heavy orchestration-section">
+            <div class="container center mb-large">
+                <h4 class="section-subtitle-mono" style="color: #bb86fc;">AGENT ORCHESTRATION</h4>
+                <h2 class="massive-title" style="font-size: 3rem; margin-top: 1rem;">
+                    真正强的，不是三个功能，<br>
+                    <span class="text-highlight">而是一套 Agent 工作机制</span>
+                </h2>
+                <h4 class="subsection-title" style="margin-top: 2rem; color: #fff;">统一理解任务，统一调用能力，统一输出结果</h4>
+                <p class="section-desc center-desc" style="max-width: 600px; margin-top: 1.5rem;">
+                    BeautyClaw 的核心，不只是拥有不同模块。
+                    而是这些能力都由 OpenClaw Agent 协同驱动，
+                    形成真正能持续运转的 AI 工作系统。
+                </p>
+            </div>
+            
+            <div class="container">
+                <div class="orchestration-diagram-box">
+                    <div class="orch-diagram">
+                        <!-- Top Input -->
+                        <div class="od-input">User Task / Auto Trigger</div>
+                        
+                        <div class="od-central-hub">
+                            <div class="hub-rings"><div class="h-ring"></div><div class="h-ring inner"></div></div>
+                            <div class="hub-core">
+                                <span>OpenClaw</span>
+                                <strong>Agent Brain</strong>
+                            </div>
+                        </div>
+                        
+                        <!-- Connecting arrows running continuously -->
+                        <div class="od-paths">
+                            <svg class="od-path-svg" viewBox="0 0 600 300" preserveAspectRatio="none">
+                                <path id="path-1" d="M300 100 C 150 150, 100 200, 100 250" fill="none" class="od-link"></path>
+                                <path id="path-2" d="M300 100 C 300 150, 300 200, 300 250" fill="none" class="od-link"></path>
+                                <path id="path-3" d="M300 100 C 450 150, 500 200, 500 250" fill="none" class="od-link"></path>
+                            </svg>
+                            <!-- Animated particles on paths -->
+                            <div class="od-particle p-left"></div>
+                            <div class="od-particle p-center"></div>
+                            <div class="od-particle p-right"></div>
+                        </div>
+
+                        <!-- 3 Modules unified -->
+                        <div class="od-modules-row">
+                            <div class="od-module">
+                                <div class="od-m-icon ai-content-bg"></div>
+                                <div class="od-m-text">内容技能调用</div>
+                            </div>
+                            <div class="od-module">
+                                <div class="od-m-icon ai-data-bg"></div>
+                                <div class="od-m-text">数据整理调用</div>
+                            </div>
+                            <div class="od-module">
+                                <div class="od-m-icon ai-ops-bg"></div>
+                                <div class="od-m-text">经营分析调用</div>
+                            </div>
+                        </div>
+                        
+                        <div class="od-output-bar">统一输出结果 (Unified Execution)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. 日常使用流程区 Daily Workflow Section -->
+        <section class="section slide-up-el pt-large mb-large">
+            <div class="container center mb-large">
+                <h4 class="section-subtitle-mono">DAILY WORKFLOW</h4>
+                <h2 class="section-title">让 AI 真正进入机构的每一天</h2>
+                <h4 class="subsection-title" style="color: #fff;">从内容生成，到数据整理，再到经营支持</h4>
+                <p class="section-desc center-desc" style="max-width: 600px;">
+                    让团队把更多时间留给真正重要的判断与服务。
+                </p>
+            </div>
+
+            <div class="container">
+                <div class="workflow-timeline">
+                    <!-- Morning -->
+                    <div class="timeline-step">
+                        <div class="ts-time">
+                            <span class="ts-icon morning-icon"></span>
+                            <span class="ts-text">早上</span>
+                        </div>
+                        <div class="ts-card">
+                            <h3 class="ts-title">生成今日内容</h3>
+                            <p class="ts-desc">系统基于策略矩阵，一键产出今日所需的所有项目推广推文、图文与短视频脚本。自动分发至团队执行。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ts-connector"></div>
+
+                    <!-- Noon -->
+                    <div class="timeline-step">
+                        <div class="ts-time">
+                            <span class="ts-icon noon-icon"></span>
+                            <span class="ts-text">中午</span>
+                        </div>
+                        <div class="ts-card card-data">
+                            <h3 class="ts-title">整理咨询与数据</h3>
+                            <p class="ts-desc">自动归集上午所有多渠道咨询对话流，提取关键意向特征、客户画像与抗拒点，形成结构化报表与回访计划。</p>
+                        </div>
+                    </div>
+
+                    <div class="ts-connector"></div>
+                    
+                    <!-- Night -->
+                    <div class="timeline-step">
+                        <div class="ts-time">
+                            <span class="ts-icon night-icon"></span>
+                            <span class="ts-text">晚上</span>
+                        </div>
+                        <div class="ts-card card-ops">
+                            <h3 class="ts-title">输出经营总结与优化</h3>
+                            <p class="ts-desc">汇总全天转化漏斗与推广效果，主动发现异常卡点，并为管理层生成明天的数据驱动经营调整建议。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. 收束 CTA 区 Contact CTA Section (Reuse generic format) -->
+                <!-- Unified Contact CTA Section -->
+        <section id="contact" class="section contact-conversion slide-up-el pb-large mt-large" style="margin-bottom: 4rem;">
+            <div class="container pt-large">
+                <div class="premium-conversion-card" style="display: flex; background: rgba(18,18,22, 0.95); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05); overflow: hidden; justify-content: space-between; flex-wrap: wrap;">
+                    
+                    <div class="conversion-left" style="padding: 4rem; flex: 1; min-width: 320px; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(255,255,255,0.05);">
+                        <h4 class="section-subtitle-mono" style="color: #888; margin-bottom: 1rem; letter-spacing: 2px;">GET STARTED</h4>
+                        <h2 class="conversion-title" style="font-size: 2.2rem; margin-bottom: 1rem; color: #fff; line-height: 1.3;">提供适配医美行业的<br>OpenClaw 解决方案</h2>
+                        <h4 class="conversion-subtitle" style="font-size: 1.1rem; color: #e0e0e0; margin-bottom: 1.5rem; font-weight: 500;">扫码即可咨询，快速了解产品演示、部署方式与合作方案</h4>
+                        <p class="conversion-desc" style="color: #a0a0a0; line-height: 1.8; margin-bottom: 2.5rem; max-width: 400px; font-size: 1rem;">
+                            我们不仅提供 BeautyClaw AI Station，<br>
+                            也提供适配医美行业的 OpenClaw 整体解决方案。<br>
+                            欢迎通过企业微信扫码对接团队。
+                        </p>
+                        <div class="conversion-actions" style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                            <a href="contact.html" class="btn btn-primary" style="padding: 12px 28px; border-radius: 8px;">扫码咨询</a>
+                            <a href="contact.html" class="btn btn-outline" style="padding: 12px 28px; border-radius: 8px;">预约演示</a>
+                            <a href="contact.html" class="btn btn-text" style="color: #03dac6;">了解解决方案 ↗</a>
+                        </div>
+                    </div>
+                    
+                    <div class="conversion-right" style="padding: 4rem; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, rgba(3, 218, 198, 0.03) 0%, transparent 70%); flex-wrap: wrap; gap: 2.5rem;">
+                        <div class="qr-core-display" style="width: 250px; height: 250px; background: #fff; border-radius: 14px; padding: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.25); flex-shrink: 0; overflow: hidden;">
+                            <img src="images/wecom_qr.png" alt="企业微信二维码 - 扫码添加 BeautyClaw" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                        </div>
+                        <div class="qr-side-text" style="text-align: left;">
+                            <h3 class="qst-title" style="font-size: 1.15rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem;">扫码添加企业微信</h3>
+                            <h4 class="qst-subtitle" style="font-size: 0.95rem; color: #a0a0a0; font-weight: 400; margin-bottom: 1.5rem;">直接对接团队</h4>
+                            <ul class="qst-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; color: #e0e0e0; font-size: 0.9rem;">
+                                <li><span class="sst-dot" style="display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: #03dac6; margin-right: 8px; vertical-align: middle; box-shadow: 0 0 5px #03dac6;"></span> 咨询产品演示</li>
+                                <li><span class="sst-dot" style="display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: #03dac6; margin-right: 8px; vertical-align: middle; box-shadow: 0 0 5px #03dac6;"></span> 获取行业方案</li>
+                                <li><span class="sst-dot" style="display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: #03dac6; margin-right: 8px; vertical-align: middle; box-shadow: 0 0 5px #03dac6;"></span> 了解合作方式</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+</main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-wrapper" style="display: flex; flex-direction: column; gap: 2rem;">
+            <div class="footer-top" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 2rem;">
+                <div class="brand-area" style="max-width: 300px;">
+                    <div class="brand" style="margin-bottom: 1rem;">
+                        <span class="brand-name">BeautyClaw</span>
+                        <span class="brand-line">|</span>
+                        <span class="brand-suffix">AI Station</span>
+                    </div>
+                    <p style="color: #a0a0a0; font-size: 0.9rem; line-height: 1.6;">基于 OpenClaw 的下一代医美 AI Agent 系统。深度适配医美行业，重塑内容、数据与经营流程。</p>
+                </div>
+                <div class="footer-links" style="display: flex; gap: 3rem; flex-wrap: wrap;">
+                    <div class="link-group" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <span style="color: #fff; font-weight: 500; margin-bottom: 0.5rem;">产品与生态</span>
+                        <a href="openclaw.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">OpenClaw 底层</a>
+                        <a href="capabilities.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">三大 AI 能力</a>
+                        <a href="skillstore.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">Skill Store 平台</a>
+                    </div>
+                    <div class="link-group" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <span style="color: #fff; font-weight: 500; margin-bottom: 0.5rem;">业务方案</span>
+                        <a href="industry.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">医美行业解决方案</a>
+                        <a href="contact.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">预约产品演示</a>
+                        <a href="contact.html" style="color: #03dac6; text-decoration: none; font-size: 0.9rem;">扫码咨询渠道合作</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom" style="display: flex; justify-content: space-between; color: #666; font-size: 0.85rem; padding-top: 1rem;">
+                <div class="copyright">&copy; 2026 BeautyClaw. Powered by OpenClaw.</div>
+                <div class="legal">
+                    <a href="#" style="color: #666; text-decoration: none; margin-left: 1rem;">隐私政策</a>
+                    <a href="#" style="color: #666; text-decoration: none; margin-left: 1rem;">服务条款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+
+<script>
+    function toggleMobileNav() {
+        const menu = document.getElementById('mobileNav');
+        if(menu) {
+            menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'flex' : 'none';
+        }
+    }
+    const btn = document.querySelector('.menu-toggle');
+    if (btn) btn.onclick = toggleMobileNav;
+</script>
+</body>
+</html>

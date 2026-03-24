@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Store | BeautyClaw AI Station</title>
+    <meta name="description" content="Skill Store：让医美 AI 能力持续安装、持续升级。BeautyClaw 的未来，不是固定功能，而是持续扩展的能力平台。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skillstore.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="skillstore-page">
+    <div class="noise-overlay"></div>
+    
+        <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="brand">
+                <span class="brand-name">BeautyClaw</span>
+                <span class="brand-line">|</span>
+                <span class="brand-suffix">AI Station</span>
+            </div>
+            <div class="nav-links desktop-only" style="margin-right: auto; margin-left: 2rem;">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="openclaw.html" class="nav-link">OpenClaw</a>
+                <a href="industry.html" class="nav-link">解决方案</a>
+                <a href="capabilities.html" class="nav-link">产品能力</a>
+                <a href="skillstore.html" class="nav-link active">Skill Store</a>
+                <a href="contact.html" class="nav-link">联系我们</a>
+            </div>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-nav-glass btn-sm">扫码咨询</a>
+                <button class="menu-toggle mobile-only" aria-label="Menu" style="background:none; border:none; color:#fff; font-size:1.5rem; cursor:pointer;" onclick="document.getElementById('mobileNav').classList.toggle('active')">☰</button>
+            </div>
+        </div>
+        <!-- Mobile nav links -->
+        <div id="mobileNav" class="mobile-nav-menu" style="display: none; flex-direction: column; background: rgba(10,10,15,0.95); padding: 1rem; position: absolute; top: 100%; left: 0; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+            <a href="index.html" class="nav-link">首页</a>
+            <a href="openclaw.html" class="nav-link">OpenClaw</a>
+            <a href="industry.html" class="nav-link">行业解决方案</a>
+            <a href="capabilities.html" class="nav-link">产品能力</a>
+            <a href="skillstore.html" class="nav-link active">Skill Store</a>
+            <a href="contact.html" class="nav-link">联系我们</a>
+        </div>
+    </nav>
+
+    <main class="smooth-wrapper">
+        <!-- 1. 首屏 Hero Section -->
+        <section class="hero slide-up-el store-hero">
+            <div class="hero-bg-system">
+                <div class="bg-glow center-glow"></div>
+                <div class="bg-glow pink-glow" style="opacity: 0.1"></div>
+                <div class="bg-glow purple-glow" style="opacity: 0.2"></div>
+                <div class="bg-glow accent-glow"></div>
+                <div class="store-grid-bg"></div>
+            </div>
+            <div class="container hero-container" style="min-height: 85vh; padding-top: 4rem;">
+                <div class="hero-layout" style="align-items: center;">
+                    <div class="hero-content-left" style="max-width: 650px;">
+                        <div class="hero-top" style="margin-bottom: 2rem;">
+                            <div class="hero-badge" style="background: rgba(3, 218, 198, 0.1); border: 1px solid rgba(3, 218, 198, 0.3); color: #03dac6;">Platform Ecosystem</div>
+                        </div>
+                        <h1 class="hero-title" style="font-size: 3.5rem; line-height: 1.2; margin-bottom: 1.5rem;">
+                            Skill Store：<br>让医美 AI 能力<span class="text-highlight" style="color: #03dac6;">持续安装、升级</span>
+                        </h1>
+                        <h2 class="hero-subtitle" style="font-weight: 400; font-size: 1.5rem; color: #fff; margin-bottom: 1.5rem;">
+                            BeautyClaw 的未来，不是固定功能，而是持续扩展的能力平台
+                        </h2>
+                        <p class="hero-desc" style="font-size: 1.125rem; color: #a0a0a0; line-height: 1.7; max-width: 550px;">
+                            机构买到的不只是当前功能，
+                            而是一套可以不断安装新能力的医美 AI 系统。
+                            这也是 BeautyClaw 最长期的价值所在。
+                        </p>
+                        <div class="hero-actions" style="margin-top: 3rem;">
+                            <a href="#contact" class="btn btn-primary" style="background: #03dac6; color: #000; font-weight: 600;">了解能力生态 ↗</a>
+                            <a href="#definition" class="btn btn-text">探索 Skill</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual-right" style="position: relative; height: 500px;">
+                        <!-- Ecosystem / Installation Abstract Visual -->
+                        <div class="store-platform-visual">
+                            <!-- Platform base -->
+                            <div class="sp-core">
+                                <div class="sp-core-ring r1"></div>
+                                <div class="sp-core-ring r2"></div>
+                                <div class="sp-core-center">OpenClaw Base</div>
+                            </div>
+                            
+                            <!-- Floating skills being pulled into the system -->
+                            <div class="sp-skill s-1">
+                                <div class="ss-icon bg-content"></div>
+                                <span>Content Skill</span>
+                            </div>
+                            <div class="sp-skill s-2 installing">
+                                <div class="ss-icon bg-data"></div>
+                                <span>Data Skill</span>
+                                <div class="install-beam"></div>
+                            </div>
+                            <div class="sp-skill s-3">
+                                <div class="ss-icon bg-ops"></div>
+                                <span>Ops Skill</span>
+                            </div>
+                            <div class="sp-skill s-4">
+                                <div class="ss-icon bg-marketing"></div>
+                                <span>Marketing Skill</span>
+                            </div>
+
+                            <!-- Abstract flow lines -->
+                            <svg class="sp-lines" viewBox="0 0 500 500">
+                                <path d="M 100 150 Q 250 150 250 250" class="flow-path"></path>
+                                <path d="M 400 150 Q 250 150 250 250" class="flow-path"></path>
+                                <path d="M 100 350 Q 250 350 250 250" class="flow-path"></path>
+                                <path d="M 400 350 Q 250 350 250 250" class="flow-path"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 什么是 Skill (Definition) -->
+        <section id="definition" class="section slide-up-el pt-large">
+            <div class="container layout-header-side">
+                <div class="side-title">
+                    <h4 class="section-subtitle-mono" style="color: #03dac6;">DEFINITION</h4>
+                    <h2 class="section-title">什么是 Skill？</h2>
+                    <h4 class="subsection-title" style="color: #fff;">面向业务任务的 AI 能力模块</h4>
+                </div>
+                <div class="side-content">
+                    <p class="section-desc text-left mt-0">
+                        每一个 Skill 都服务于明确场景，
+                        例如内容生成、数据整理、项目营销或经营建议。
+                        它不是简单插件，而是 OpenClaw 可调用的行业能力单元。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="container pb-large">
+                <div class="skill-definition-cards">
+                    <div class="def-card">
+                        <div class="def-icon-box"><span class="icon-cube"></span></div>
+                        <h3 class="def-title">原子化场景</h3>
+                        <p class="def-desc">抛弃大而全的设计。每个 Skill 只为一个极其聚焦的高频场景服务，做深做透，达到行业专家级产出。</p>
+                    </div>
+                    <div class="def-card">
+                        <div class="def-icon-box"><span class="icon-link"></span></div>
+                        <h3 class="def-title">Agent 可直调</h3>
+                        <p class="def-desc">并非游离于系统之外的插件。Skill 安装后，将被 OpenClaw 统一理解、自动编排并融入整个系统的认知中。</p>
+                    </div>
+                    <div class="def-card">
+                        <div class="def-icon-box"><span class="icon-upgrade"></span></div>
+                        <h3 class="def-title">随行业持续进化</h3>
+                        <p class="def-desc">营销打法和平台机制在变，Skill 也会随着最新行业标准而独立升级，无需重构底层基础设施。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 为什么 Skill 是 OpenClaw 的核心 (Why Core) -->
+        <section class="section slide-up-el block-heavy mb-large" style="background: rgba(18,18,18,0.7); padding: 5rem 0; border: 1px solid rgba(255,255,255,0.05); margin: 0 1rem; border-radius: 24px;">
+            <div class="container center mb-large">
+                <h4 class="section-subtitle-mono">EVOLUTION CORE</h4>
+                <h2 class="massive-title" style="font-size: 2.8rem; margin-top: 1rem;">
+                    Skill，是 OpenClaw 能力<br>持续增长的核心方式
+                </h2>
+                <h4 class="subsection-title" style="margin-top: 1.5rem; color: #fff;">从静态软件，到可进化平台</h4>
+                <p class="section-desc center-desc" style="max-width: 650px; margin-top: 1.5rem;">
+                    传统软件的功能是固定的。
+                    而 BeautyClaw 的能力可以通过 Skill 持续扩展。
+                    机构需求越具体，Skill 的价值就越明显。
+                </p>
+            </div>
+            
+            <div class="container pb-large">
+                <!-- Paradigm Compare Visual -->
+                <div class="paradigm-vs-box">
+                    <div class="pvs-side static-side">
+                        <div class="pvs-tag">传统软件型</div>
+                        <div class="pvs-model">
+                            <div class="monolith-block">
+                                <div class="m-line"></div>
+                                <div class="m-line"></div>
+                                <div class="m-line"></div>
+                                <div class="m-lock">功能边界固定</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pvs-divider">VS</div>
+                    <div class="pvs-side evolve-side">
+                        <div class="pvs-tag active">能力生态型</div>
+                        <div class="pvs-model">
+                            <div class="evolve-system">
+                                <div class="e-core">Agent OS</div>
+                                <div class="e-orbit-layer">
+                                    <div class="e-skill s-a"></div>
+                                    <div class="e-skill s-b"></div>
+                                    <div class="e-skill s-c"></div>
+                                    <div class="e-skill s-d new"><span class="plus">+</span></div>
+                                </div>
+                            </div>
+                            <div class="e-label">可持续长出新能力边界</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 首批医美 Skill 展示 (First Batch) -->
+        <section class="section slide-up-el pt-large mb-large">
+            <div class="container">
+                <div class="center mb-large">
+                    <h4 class="section-subtitle-mono" style="color: #03dac6;">FIRST BATCH</h4>
+                    <h2 class="section-title">首批医美 Skill，围绕高频业务场景构建</h2>
+                    <h4 class="subsection-title" style="color: #fff;">从内容到数据，从运营到增长</h4>
+                    <p class="section-desc center-desc" style="max-width: 650px;">
+                        包括医美短视频生成、数据整理、经营建议、
+                        医生 IP 打造、项目营销技能等。
+                        共同构成机构日常工作的 AI 能力基础。
+                    </p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="skill-showcase-grid">
+                    <!-- Cards -->
+                    <div class="skill-sc-card">
+                        <div class="sc-icon text-wrap"></div>
+                        <div class="sc-content">
+                            <h3>短视频生成 Skill</h3>
+                            <p>结合品项结构与抖音流量逻辑，一键产出爆款短视频脚本与拍摄分镜。提升编导人效。</p>
+                        </div>
+                        <div class="sc-status">可安装</div>
+                    </div>
+                    
+                    <div class="skill-sc-card">
+                        <div class="sc-icon data-wrap"></div>
+                        <div class="sc-content">
+                            <h3>数据整理 Skill</h3>
+                            <p>穿透凌乱微信对话，自动凝练沟通关键信息。自动生成跟进纪要及业务标签库。</p>
+                        </div>
+                        <div class="sc-status">可安装</div>
+                    </div>
+
+                    <div class="skill-sc-card">
+                        <div class="sc-icon ops-wrap"></div>
+                        <div class="sc-content">
+                            <h3>经营建议 Skill</h3>
+                            <p>多维度透视漏斗转化损耗点，向运营端及老板端提供直接的诊断日报及经营对策推荐。</p>
+                        </div>
+                        <div class="sc-status">可安装</div>
+                    </div>
+
+                    <div class="skill-sc-card">
+                        <div class="sc-icon doc-wrap"></div>
+                        <div class="sc-content">
+                            <h3>医生 IP 打造 Skill</h3>
+                            <p>基于医生真实专业知识图谱及手术心得，塑造既符合平台网感又保留医学严谨的专家人设。</p>
+                        </div>
+                        <div class="sc-status">新上线</div>
+                    </div>
+
+                    <div class="skill-sc-card">
+                        <div class="sc-icon project-wrap"></div>
+                        <div class="sc-content">
+                            <h3>项目营销 Skill</h3>
+                            <p>从品项卖点挖掘、到客群定位包装及活动话术拆解，全链路自动化生成项目发售材料。</p>
+                        </div>
+                        <div class="sc-status">新上线</div>
+                    </div>
+
+                    <div class="skill-sc-card">
+                        <div class="sc-icon traffic-wrap"></div>
+                        <div class="sc-content">
+                            <h3>抖音流量策略 Skill</h3>
+                            <p>监控竞对舆论及热门话题，动态调优自身账号的短视频标签指引与内容配比策略。</p>
+                        </div>
+                        <div class="sc-status">即将推出</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Skill Store 的长期意义 (Longterm Value/Moat) -->
+        <section class="section slide-up-el long-term-section">
+            <div class="container layout-massive-split">
+                <div class="massive-text" style="align-self: center;">
+                    <h4 class="section-subtitle-mono" style="color: #666;">LONGTERM MOAT</h4>
+                    <h2 class="massive-title" style="font-size: 3rem;">
+                        Skill Store 的意义，<br>不只是增加功能
+                    </h2>
+                    <h4 class="subsection-title" style="margin-top: 1.5rem; color: #bb86fc;">而是把行业知识与业务流程持续沉淀下来</h4>
+                    <p class="section-desc text-left" style="max-width: 500px; margin-top: 1.5rem; color: #a0a0a0;">
+                        今天安装的是一个 Skill。<br>
+                        长期形成的，是一整套医美行业 AI 能力体系。<br>
+                        这也是 BeautyClaw 最核心的长期壁垒。
+                    </p>
+                </div>
+                
+                <div class="hero-visual-right visual-box lt-moat-box">
+                    <div class="moat-graphic">
+                        <div class="mg-layer mg-bottom">
+                            <span>基础数据 & 工具</span>
+                        </div>
+                        <div class="mg-arrows">↑ ↑ ↑</div>
+                        <div class="mg-layer mg-mid">
+                            <span>Agent 调度层</span>
+                        </div>
+                        <div class="mg-arrows">↑ ↑ ↑</div>
+                        <div class="mg-layer mg-top highlight">
+                            <div class="skills-row">
+                                <div class="s-brick"></div><div class="s-brick"></div><div class="s-brick"></div><div class="s-brick"></div>
+                            </div>
+                            <span>不可复制的行业 Skill 生态圈</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 收束 CTA 区 Contact CTA Section (Reuse generic format) -->
+                <!-- Unified Contact CTA Section -->
+        <section id="contact" class="section contact-conversion slide-up-el pb-large mt-large" style="margin-bottom: 4rem;">
+            <div class="container pt-large">
+                <div class="premium-conversion-card" style="display: flex; background: rgba(18,18,22, 0.95); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05); overflow: hidden; justify-content: space-between; flex-wrap: wrap;">
+                    
+                    <div class="conversion-left" style="padding: 4rem; flex: 1; min-width: 320px; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(255,255,255,0.05);">
+                        <h4 class="section-subtitle-mono" style="color: #888; margin-bottom: 1rem; letter-spacing: 2px;">GET STARTED</h4>
+                        <h2 class="conversion-title" style="font-size: 2.2rem; margin-bottom: 1rem; color: #fff; line-height: 1.3;">提供适配医美行业的<br>OpenClaw 解决方案</h2>
+                        <h4 class="conversion-subtitle" style="font-size: 1.1rem; color: #e0e0e0; margin-bottom: 1.5rem; font-weight: 500;">扫码即可咨询，快速了解产品演示、部署方式与合作方案</h4>
+                        <p class="conversion-desc" style="color: #a0a0a0; line-height: 1.8; margin-bottom: 2.5rem; max-width: 400px; font-size: 1rem;">
+                            我们不仅提供 BeautyClaw AI Station，<br>
+                            也提供适配医美行业的 OpenClaw 整体解决方案。<br>
+                            欢迎通过企业微信扫码对接团队。
+                        </p>
+                        <div class="conversion-actions" style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                            <a href="contact.html" class="btn btn-primary" style="padding: 12px 28px; border-radius: 8px;">扫码咨询</a>
+                            <a href="contact.html" class="btn btn-outline" style="padding: 12px 28px; border-radius: 8px;">预约演示</a>
+                            <a href="contact.html" class="btn btn-text" style="color: #03dac6;">了解解决方案 ↗</a>
+                        </div>
+                    </div>
+                    
+                    <div class="conversion-right" style="padding: 4rem; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, rgba(3, 218, 198, 0.03) 0%, transparent 70%); flex-wrap: wrap; gap: 2.5rem;">
+                        <div class="qr-core-display" style="width: 250px; height: 250px; background: #fff; border-radius: 14px; padding: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.25); flex-shrink: 0; overflow: hidden;">
+                            <img src="images/wecom_qr.png" alt="企业微信二维码 - 扫码添加 BeautyClaw" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                        </div>
+                        <div class="qr-side-text" style="text-align: left;">
+                            <h3 class="qst-title" style="font-size: 1.15rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem;">扫码添加企业微信</h3>
+                            <h4 class="qst-subtitle" style="font-size: 0.95rem; color: #a0a0a0; font-weight: 400; margin-bottom: 1.5rem;">直接对接团队</h4>
+                            <ul class="qst-list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; color: #e0e0e0; font-size: 0.9rem;">
+                                <li><span class="sst-dot" style="display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: #03dac6; margin-right: 8px; vertical-align: middle; box-shadow: 0 0 5px #03dac6;"></span> 咨询产品演示</li>
+                                <li><span class="sst-dot" style="display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: #03dac6; margin-right: 8px; vertical-align: middle; box-shadow: 0 0 5px #03dac6;"></span> 获取行业方案</li>
+                                <li><span class="sst-dot" style="display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: #03dac6; margin-right: 8px; vertical-align: middle; box-shadow: 0 0 5px #03dac6;"></span> 了解合作方式</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+</main>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-wrapper" style="display: flex; flex-direction: column; gap: 2rem;">
+            <div class="footer-top" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 2rem;">
+                <div class="brand-area" style="max-width: 300px;">
+                    <div class="brand" style="margin-bottom: 1rem;">
+                        <span class="brand-name">BeautyClaw</span>
+                        <span class="brand-line">|</span>
+                        <span class="brand-suffix">AI Station</span>
+                    </div>
+                    <p style="color: #a0a0a0; font-size: 0.9rem; line-height: 1.6;">基于 OpenClaw 的下一代医美 AI Agent 系统。深度适配医美行业，重塑内容、数据与经营流程。</p>
+                </div>
+                <div class="footer-links" style="display: flex; gap: 3rem; flex-wrap: wrap;">
+                    <div class="link-group" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <span style="color: #fff; font-weight: 500; margin-bottom: 0.5rem;">产品与生态</span>
+                        <a href="openclaw.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">OpenClaw 底层</a>
+                        <a href="capabilities.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">三大 AI 能力</a>
+                        <a href="skillstore.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">Skill Store 平台</a>
+                    </div>
+                    <div class="link-group" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <span style="color: #fff; font-weight: 500; margin-bottom: 0.5rem;">业务方案</span>
+                        <a href="industry.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">医美行业解决方案</a>
+                        <a href="contact.html" style="color: #a0a0a0; text-decoration: none; font-size: 0.9rem;">预约产品演示</a>
+                        <a href="contact.html" style="color: #03dac6; text-decoration: none; font-size: 0.9rem;">扫码咨询渠道合作</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom" style="display: flex; justify-content: space-between; color: #666; font-size: 0.85rem; padding-top: 1rem;">
+                <div class="copyright">&copy; 2026 BeautyClaw. Powered by OpenClaw.</div>
+                <div class="legal">
+                    <a href="#" style="color: #666; text-decoration: none; margin-left: 1rem;">隐私政策</a>
+                    <a href="#" style="color: #666; text-decoration: none; margin-left: 1rem;">服务条款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+
+<script>
+    function toggleMobileNav() {
+        const menu = document.getElementById('mobileNav');
+        if(menu) {
+            menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'flex' : 'none';
+        }
+    }
+    const btn = document.querySelector('.menu-toggle');
+    if (btn) btn.onclick = toggleMobileNav;
+</script>
+</body>
+</html>
