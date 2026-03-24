@@ -12,8 +12,8 @@
     
     --accent-primary: #d4b9ce; /* Cold Rose */
     
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
-    --font-heading: 'Outfit', 'Inter', -apple-system, sans-serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    --font-heading: 'Outfit', 'Inter', -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     
     --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
